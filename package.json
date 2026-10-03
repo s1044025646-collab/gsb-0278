@@ -1,0 +1,17 @@
+{
+  "name": "repeat-lcp-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地单文档重复片段分析服务：后缀数组 + LCP（TypeScript / Node.js / SQLite）",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node dist/test/run-tests.js",
+    "start": "npm run build && node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
