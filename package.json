@@ -1,0 +1,25 @@
+{
+  "name": "sa-repeat-analyzer",
+  "version": "1.0.0",
+  "description": "后缀数组重复片段定位与 LCP 解释后端",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "node dist/cli.js serve",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
